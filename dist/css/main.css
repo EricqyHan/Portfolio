@@ -264,7 +264,7 @@ img {
     grid-area: phone; }
   #contact-a .text-fields .message-input {
     grid-area: message;
-    height: 100px; }
+    height: 150px; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
@@ -275,10 +275,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center; }
-
-#contact-c h1 {
-  text-align: center;
-  font-size: 4rem; }
 
 #main-footer {
   background: #333;

@@ -204,7 +204,7 @@ img {
       }
       .message-input {
         grid-area: message;
-        height: 100px;
+        height: 150px;
       }
 
       .text-input {
@@ -222,13 +222,6 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
-    }
-  }
-
-  &-c {
-    h1 {
-      text-align: center;
-      font-size: 4rem;
     }
   }
 }
