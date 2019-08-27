@@ -39,6 +39,15 @@ img {
   height: 70px;
   color: #fff;
   text-transform: uppercase;
+  animation: rotation 12s infinite linear;
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 }
 
 // Main Nav
@@ -55,9 +64,10 @@ img {
     padding: 1rem 1.5rem;
   }
 
+  // Menu bar text color
   a {
     text-decoration: none;
-    color: #eae9e9;
+    color: #f54c72; //1d2731,
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
@@ -78,12 +88,12 @@ img {
   &-home {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
-    color: #fff;
+    color: #f7f5e6;
 
     // Header Content
     .header-content {
       text-align: center;
-      padding-top: 20%;
+      padding-top: 53%;
 
       h1 {
         font-size: 4rem;
@@ -135,6 +145,7 @@ img {
         grid-area: bio;
         border-left: 3px solid $main-color;
         padding: 0.8rem;
+        text-align: left;
       }
 
       .degree-1 {
@@ -192,15 +203,11 @@ img {
       .name-input {
         grid-area: name;
       }
-      .subject-input {
-        grid-area: subject;
-      }
+
       .email-input {
         grid-area: email;
       }
-      .phone-input {
-        grid-area: phone;
-      }
+
       .message-input {
         grid-area: message;
         height: 100px;
@@ -212,8 +219,10 @@ img {
     }
 
     button[type="submit"] {
-      width: 75%;
-      position: relative;
+      width: 35%;
+      float: left;
+      text-align: center;
+      margin: 0 auto;
     }
   }
 
@@ -226,9 +235,30 @@ img {
   }
 
   &-c {
-    h1 {
+    h3 {
       text-align: center;
-      font-size: 4rem;
+      font-size: 2rem;
+    }
+
+    .quoteDisplay {
+      align-content: center;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn {
+      border: none;
+      background-color: inherit;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      text-align: center;
+      margin: 0 auto;
+      left: 50%;
+      right: 50%;
     }
   }
 }
@@ -261,3 +291,6 @@ img {
     }
   }
 }
+
+//import media querries
+@import "media";
